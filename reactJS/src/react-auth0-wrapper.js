@@ -21,7 +21,7 @@ export const Auth0Provider = ({
   useEffect(() => {
     const initAuth0 = async () => {
       const auth0FromHook = await createAuth0Client({
-        audience: 'https://nexus.xpi.us',
+        audience: 'https://10.0.0.54',
         ...initOptions
       });
       setAuth0(auth0FromHook);
