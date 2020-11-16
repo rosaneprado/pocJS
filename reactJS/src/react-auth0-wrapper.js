@@ -21,7 +21,7 @@ export const Auth0Provider = ({
   useEffect(() => {
     const initAuth0 = async () => {
       const auth0FromHook = await createAuth0Client({
-        audience: 'https://pocprado.us.auth0.com',
+        audience: 'https://pocprado.us.auth0.com/api/v2/',
         ...initOptions
       });
       setAuth0(auth0FromHook);
